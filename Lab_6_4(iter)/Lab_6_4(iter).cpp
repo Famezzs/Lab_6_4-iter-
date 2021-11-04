@@ -121,7 +121,7 @@ void SortArr(int *a, const int size)
 {
 	for (int z = 0; z < size / 2.0; z++)
 	{
-		for (int i = 0; i < size - (z + 1); i++)
+		for (int i = 0; i < size - z - 1; i++)
 		{
 			int tmp = a[i + z];
 			a[i + z] = a[i + z + 1];
