@@ -78,12 +78,12 @@ void PrintArr(int *a, const int size)
 
 int Min(int *a, const int size)
 {
-	int min = a[0];
+	int min = abs(a[0]);
 
 	for (int i = 1; i < size; i++)
 	{
 		if (abs(a[i]) < abs(min))
-			min = a[i];
+			min = abs(a[i]);
 	}
 
 	return min;
